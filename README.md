@@ -39,8 +39,8 @@ Dynamically injects time into the DOM
 Styled using modern CSS
 
 📸 Screenshot
-<p align="center"> <img src="digital-clock.jpg" width="500" /> </p>
+<p align="center"> <img src="screenshot/digital-clock.jpg" width="500" /> </p>
 
 This is mobile ratio Screenshot
-<p align="center"> <img src="digital-clock-mobile.jpg" width="500" /> </p>
+<p align="center"> <img src="screenshot/digital-clock-mobile.jpeg" width="500" /> </p>
 
