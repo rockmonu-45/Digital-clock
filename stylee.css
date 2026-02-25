@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("sky-backgroundd.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    min-height: 350px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 40px 30px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;              
+    white-space: nowrap;
+}
+
+
+.clock span {
+    font-size: 90px;
+    min-width: 80px;
+    text-align: center;
+    position: relative;
+}
+
+
+.clock span::after {
+    font-size: 18px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after { content: 'HOURS'; }
+#min::after { content: 'MINS'; }
+#sec::after { content: 'SEC'; }
+
+.day {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+        min-height: 280px;
+    }
+
+    .clock {
+        gap: 8px;             
+    }
+
+    .clock span {
+        font-size: 50px;      
+        min-width: 50px;       
+    }
+
+    .clock span::after {
+        font-size: 10px;
+        bottom: -18px;
+    }
+
+    .day {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        min-height: 600px;   
+    }
+
+}
